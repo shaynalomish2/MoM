@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day Mom!</title>
+    <style>
+        :root {
+            --paper-color: #fff9f0;
+            --accent-pink: #ffafbd;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            background-color: #ffe9e9;
+            font-family: 'Georgia', serif;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: var(--paper-color);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed var(--accent-pink);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: #d63384; font-size: 2.5rem; }
+
+        .letter {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+            white-space: pre-line;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            width: 100%;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 15px 15px 30px 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transform: rotate(var(--rotation));
+            transition: transform 0.3s ease;
+        }
+
+        .polaroid:hover {
+            transform: scale(1.05) rotate(0deg);
+            z-index: 10;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 15px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Happy Mother's Day, Mom! ❤️</h1>
+        </header>
+
+        <section class="letter">
+            Dear Mom,
+
+            I love you so much, you have no idea how incomplete my life is without you in it.Thank you for being my constant support and my biggest cheerleader.
+          
+            I put together some of my favorite memories of us. I hope these make you smile as much as you make me smile.
+
+            Love always,
+            Arnav
+        </section>
+
+        <div class="gallery">
+            <div class="polaroid" style="--rotation: -2deg;">
+                <img src="birthday.jpeg" alt="Memory 1">
+                <div class="caption">No matter what you always wake up for our birthday at 12.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: 3deg;">
+                <img src="pretty.jpeg" alt="Memory 2">
+                <div class="caption">You will always be more prettier than me!</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: -1deg;">
+                <img src="Childhood_pic.jpeg" alt="Memory 3">
+                <div class="caption">Ofc my first birthday, how can I forget this picture.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: 2deg;">
+                <img src="nanu.jpeg" alt="Memory 4">
+                <div class="caption">My fav pic.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: -3deg;">
+                <img src="kpmg.jpeg" alt="Memory 5">
+                <div class="caption">Celebrating your big achievement.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: 1deg;">
+                <img src="boating.jpeg" alt="Memory 6">
+                <div class="caption">When we left everyone else and went for shopping and boating.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: -2deg;">
+                <img src="ethnic.jpeg" alt="Memory 7">
+                <div class="caption">No one can beat us in ethnic.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: 4deg;">
+                <img src="goa.jpeg" alt="Memory 8">
+                <div class="caption">My fav vaccation-GOA.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: -1deg;">
+                <img src="avi.jpeg" alt="Memory 9">
+                <div class="caption">A candid moment of my fav people.</div>
+            </div>
+
+            <div class="polaroid" style="--rotation: 2deg;">
+                <img src="dress.jpeg" alt="Memory 10">
+                <div class="caption">To many more vaccations!</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>I love you so much.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
